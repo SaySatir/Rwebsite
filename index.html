@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JolyBell</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Company Name - Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>JolyBell</h1>
+  <!-- Шапка сайта с навигацией и героем -->
+  <header>
+    <div class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">New Company</a>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="products.html">Продукты</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        <h2>Добро пожаловать в JolyBell</h2>
-        <p>Выберите категорию и найдите лучший товар для себя.</p>
-    </main>
+      </div>
+    </div>
+    <div class="hero-section">
+      <div class="hero-overlay">
+        <div class="container">
+          <h1>Добро пожаловать в New Company</h1>
+          <p>Мы предлагаем лучшие косметические продукты для вашей красоты.</p>
+          <a href="products.html" class="btn">Посмотреть продукты</a>
+        </div>
+      </div>
+      <img src="assets/images/new-banner.jpg" alt="New Company Banner">
+    </div>
+  </header>
+
+  <main>
+    <section class="featured-products">
+      <div class="container">
+        <h2>Наши популярные продукты</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/images/new-product1.jpg" alt="New Product 1">
+            <h3>New Product 1</h3>
+            <p>Краткое описание продукта 1, его особенности и преимущества.</p>
+            <a href="product.html?id=1" class="btn-details">Подробнее</a>
+          </div>
+          <div class="product-card">
+            <img src="assets/images/new-product2.jpg" alt="New Product 2">
+            <h3>New Product 2</h3>
+            <p>Краткое описание продукта 2, его особенности и преимущества.</p>
+            <a href="product.html?id=2" class="btn-details">Подробнее</a>
+          </div>
+          <div class="product-card">
+            <img src="assets/images/new-product3.jpg" alt="New Product 3">
+            <h3>New Product 3</h3>
+            <p>Краткое описание продукта 3, его особенности и преимущества.</p>
+            <a href="product.html?id=3" class="btn-details">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 New Company Name. Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
