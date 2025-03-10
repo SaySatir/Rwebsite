@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор футболок</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Конструктор футболок с принтами</h1>
+    </header>
+
+    <main>
+        <section id="tshirt-selector">
+            <h2>Выберите футболку</h2>
+            <div class="tshirt-options">
+                <img src="images/tshirt1.png" alt="Футболка 1" class="tshirt-option" data-tshirt="images/tshirt1.png">
+                <img src="images/tshirt2.png" alt="Футболка 2" class="tshirt-option" data-tshirt="images/tshirt2.png">
+                <img src="images/tshirt3.png" alt="Футболка 3" class="tshirt-option" data-tshirt="images/tshirt3.png">
+            </div>
+        </section>
+
+        <section id="print-selector">
+            <h2>Выберите принт</h2>
+            <div class="print-options">
+                <img src="images/print1.png" alt="Принт 1" class="print-option" data-print="images/print1.png">
+                <img src="images/print2.png" alt="Принт 2" class="print-option" data-print="images/print2.png">
+                <img src="images/print3.png" alt="Принт 3" class="print-option" data-print="images/print3.png">
+            </div>
+        </section>
+
+        <section id="preview">
+            <h2>Предварительный просмотр</h2>
+            <div class="preview-container">
+                <img id="tshirt-image" src="images/tshirt1.png" alt="Футболка" class="preview-tshirt">
+                <canvas id="canvas" width="300" height="400"></canvas>
+            </div>
+        </section>
+
+        <button id="save-btn">Сохранить картинку</button>
+    </main>
+
+    <footer>
+        <p>© 2025 Мой сайт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
